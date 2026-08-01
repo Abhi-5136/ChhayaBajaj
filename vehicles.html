@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bajaj Vehicles & Bikes Lineup | Chhaya Bajaj Varanasi</title>
+  <meta name="description"
+    content="Explore the full lineup of Bajaj motorcycles and electric scooters at Chhaya Bajaj Bhopapur, Varanasi. Check specs for Pulsar, Dominar, Platina, Freedom 125, and Chetak EV.">
+  <meta name="theme-color" content="#003399">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="site-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        CHHAYA <span class="accent-text">BAJAJ</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="vehicles.html" class="nav-link active">Vehicles</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="btn-cta btn-test-ride">Book a Test Ride</button>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+  </nav>
+
+  <!-- Drawer Overlay -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" style="font-size: 1.15rem;">CHHAYA <span
+          class="accent-text">BAJAJ</span></a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">
+        <span class="drawer-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="5.5" cy="17.5" r="3.5" />
+            <circle cx="18.5" cy="17.5" r="3.5" />
+            <path d="M15 6a1 1 0 0 0-1-1h-3" />
+            <path d="m8 17 5.45-11h.05L18 10l.5 2.5" />
+          </svg></span>
+        Home
+      </a>
+      <a href="vehicles.html" class="drawer-link">
+        <span class="drawer-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+          </svg></span>
+        Vehicles
+      </a>
+      <a href="service.html" class="drawer-link">
+        <span class="drawer-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+          </svg></span>
+        Service
+      </a>
+      <a href="about.html" class="drawer-link">
+        <span class="drawer-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="16" x2="12" y2="12" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
+          </svg></span>
+        About
+      </a>
+      <a href="careers.html" class="drawer-link">
+        <span class="drawer-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+          </svg></span>
+        Careers
+      </a>
+      <a href="contact.html" class="drawer-link">
+        <span class="drawer-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.69 3.5 2 2 0 0 1 3.68 1.5h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.9 6.91l.82-.82a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg></span>
+        Contact
+      </a>
+      <div class="drawer-actions">
+        <button class="btn-cta btn-test-ride" style="width:100%; justify-content:center;">Book a Test Ride</button>
+        <a href="https://wa.me/917007931999" target="_blank" rel="noopener" class="drawer-contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+          Chat on Whatsapp
+        </a>
+        <a href="mailto:info@chhayabajaj.com" class="drawer-contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Chat on E-mail
+        </a>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- Page Header with Integrated Filter -->
+  <section class="vehicles-page-header">
+    <div class="container">
+      <div class="vehicles-header-inner">
+        <h1 class="section-title">Explore The <span class="highlight-accent">Bajaj Lineup</span></h1>
+        <p class="vehicles-hero-sub">From high-performance sports bikes to sustainable electric mobility, find your perfect match.</p>
+        <!-- Filter Tabs -->
+        <div class="filter-tabs vehicles-filter-tabs">
+          <button class="filter-btn active" data-filter="daring">Daring</button>
+          <button class="filter-btn" data-filter="comfort">Comfort</button>
+          <button class="filter-btn" data-filter="electric">Electric</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vehicle Grid -->
+  <section class="collection-section">
+    <div class="container">
+
+      <!-- Vehicle Grid -->
+      <div class="cards-grid" id="vehicleGrid">
+        
+        <!-- Bike 6: Pulsar NS160 -->
+        <div class="bike-card vehicle-item" data-category="daring">
+          <div class="bike-card-image">
+            <span class="badge-tag">Aggressive</span>
+            <img src="https://www.bikeleague.in/wp-content/uploads/2022/06/pulsar-n160-8.jpg"
+              alt="Pulsar NS160">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Pulsar NS160</h3>
+            <p class="bike-card-desc">A bold naked street bike with sharp design, responsive handling, and everyday performance.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">160.3 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mileage</span>
+                <span class="spec-val">45 kmpl</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel Tank</span>
+                <span class="spec-val">12 L</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike 2: Pulsar NS -->
+        <div class="bike-card vehicle-item" data-category="daring">
+          <div class="bike-card-image">
+            <span class="badge-tag">Street Fighter</span>
+            <img src="https://somosmoto.pe/images/models/gallery/bajaj-pulsar-pulsar-ns200-fi-2017-gallery-75ab23.jpg"
+              alt="Pulsar NS">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Pulsar NS200</h3>
+            <p class="bike-card-desc">Raw power meets aggressive styling for the modern street fighter. Liquid-cooled
+              triple spark engine.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">199.5 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mileage</span>
+                <span class="spec-val">36 kmpl</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel Tank</span>
+                <span class="spec-val">12 L</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        
+         <!-- Bike 5: Pulsar N160 -->
+        <div class="bike-card vehicle-item" data-category="daring">
+          <div class="bike-card-image">
+            <span class="badge-tag">Racing</span>
+            <img src="https://media.zigcdn.com/media/model/2025/Sep/bajaj-pulsar-ns-125-right-side-view_600x400.jpg"
+              alt="Pulsar N">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Pulsar N160</h3>
+            <p class="bike-card-desc">Precision handling with dual-channel ABS and projector headlamp for unmatched
+              urban agility.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">164.82 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mileage</span>
+                <span class="spec-val">45 kmpl</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel Tank</span>
+                <span class="spec-val">14 L</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <!-- Bike 7: Pulsar N 250 -->
+        <div class="bike-card vehicle-item" data-category="daring">
+          <div class="bike-card-image">
+            <span class="badge-tag">Performance</span>
+            <img src="https://tse3.mm.bing.net/th/id/OIP.4-oasD85-o1AtA2vP7m7agHaFL?r=0&w=1000&h=700&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Pulsar N 250">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Pulsar N 250</h3>
+            <p class="bike-card-desc">A muscular street bike with sharp styling, strong mid-range punch, and confident highway manners.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">249.07 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mileage</span>
+                <span class="spec-val">35 kmpl</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel Tank</span>
+                <span class="spec-val">14 L</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike 3: Dominar 400 -->
+        <div class="bike-card vehicle-item" data-category="daring">
+          <div class="bike-card-image">
+            <span class="badge-tag">Hyper</span>
+            <img src="https://expomoto.pe/wp-content/uploads/2025/06/dominar-400-1-600x400.jpg" alt="Dominar 400">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Dominar 400</h3>
+            <p class="bike-card-desc">The ultimate hyper tourer built for highway cruises, dual-channel ABS, and factory
+              touring accessories.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">373.3 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Power</span>
+                <span class="spec-val">40 PS</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel Tank</span>
+                <span class="spec-val">13 L</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Bike 1: Pulsar 150 -->
+        <div class="bike-card vehicle-item" data-category="daring">
+          <div class="bike-card-image">
+            <span class="badge-tag">Classic</span>
+            <img
+              src="https://cdn.bajajauto.com/-/media/Images/bajajauto/brands/bajaj-bikes/pulsar/pulsar-150/variant/variant.ashx"
+              alt="Pulsar 150">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Pulsar 150</h3>
+            <p class="bike-card-desc">The classic performance icon that redefined the 150cc segment in India. Perfect
+              blend of power and economy.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">149.5 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mileage</span>
+                <span class="spec-val">48 kmpl</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel Tank</span>
+                <span class="spec-val">15 L</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike 4: Pulsar 125 -->
+        <div class="bike-card vehicle-item" data-category="daring">
+          <div class="bike-card-image">
+            <span class="badge-tag">Urban Performer</span>
+            <img src="https://tse3.mm.bing.net/th/id/OIP.nRKNGVcuCjUh_ti04JRbAwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Pulsar 125">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Pulsar 125</h3>
+            <p class="bike-card-desc">A stylish and efficient commuter with bold design, smooth handling, and everyday practicality.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">124.4 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mileage</span>
+                <span class="spec-val">50 kmpl</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel Tank</span>
+                <span class="spec-val">12 L</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <!-- Bike 6: Platina 110 -->
+        <div class="bike-card vehicle-item" data-category="comfort">
+          <div class="bike-card-image">
+            <span class="badge-tag accent-bg">Comfort</span>
+            <img src="https://media.zigcdn.com/media/model/2025/Sep/bajaj-platina-110-right-side-view_600x400.jpg"
+              alt="Platina 110">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Platina 110</h3>
+            <p class="bike-card-desc">ComfortTec technology with long seat and ABS option for unmatched comfort during
+              daily commutes.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">115.45 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mileage</span>
+                <span class="spec-val">70 kmpl</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel Tank</span>
+                <span class="spec-val">11 L</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike 6: Freedom 125 -->
+        <div class="bike-card vehicle-item" data-category="comfort">
+          <div class="bike-card-image">
+            <span class="badge-tag accent-bg">Innovative</span>
+            <img src="https://th.bing.com/th/id/OIP.6mUnee7fc51A4QcWkD8H8gHaE8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+              alt="Freedom 125">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Freedom 125</h3>
+            <p class="bike-card-desc">World's first CNG + Petrol multi-fuel motorcycle delivering massive savings and
+              ultra-smooth riding.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">125 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Fuel</span>
+                <span class="spec-val">CNG + Petrol</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Range</span>
+                <span class="spec-val">330+ km</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike 7: CT 110X -->
+        <div class="bike-card vehicle-item" data-category="comfort">
+          <div class="bike-card-image">
+            <span class="badge-tag accent-bg">Rugged</span>
+            <img src="https://cdn1.acedms.com/uploads/category/Bajaj/20200929121742000000-4608132226621049345.jpg"
+              alt="CT 110X">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">CT 110X</h3>
+            <p class="bike-card-desc">Tough crash guard, high ground clearance, and heavy-duty carrier built for hard
+              working conditions.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Engine</span>
+                <span class="spec-val">115.45 cc</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mileage</span>
+                <span class="spec-val">70 kmpl</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Clearance</span>
+                <span class="spec-val">170 mm</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike 8: Chetak EV -->
+        <div class="bike-card vehicle-item" data-category="electric">
+          <div class="bike-card-image">
+            <span class="badge-tag accent-bg">Electric</span>
+            <img src="https://www.bikeleague.in/wp-content/uploads/2025/01/right_angle-2.png" alt="Chetak EV">
+          </div>
+          <div class="bike-card-body">
+            <h3 class="bike-card-title">Chetak EV</h3>
+            <p class="bike-card-desc">Seamless electric commuting with full metal body, IP67 water resistance, and
+              smartphone connectivity.</p>
+            <div class="bike-specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Range</span>
+                <span class="spec-val">126 km</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Top Speed</span>
+                <span class="spec-val">73 km/h</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Charge</span>
+                <span class="spec-val">4.5 hrs</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: auto;">
+              <button class="btn-primary btn-test-ride" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center;">Book Test Ride</button>
+              <a href="contact.html#contactFormSection" class="btn-outline btn-enquire" style="flex: 1; padding: 0.65rem 0.4rem; font-size: 0.825rem; justify-content: center; text-decoration: none;">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- The Bajaj Promise -->
+  <section class="collection-section bg-muted-subtle">
+    <div class="container" style="text-align: center; max-width: 48rem;">
+      <span class="section-tag">Quality Guarantee</span>
+      <h2 class="section-title">Chhaya <span class="highlight-primary">  Bajaj</span></h2>
+      <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.7;">
+        Every vehicle sold at Chhaya Bajaj Bhopapur comes with the official assurance of 5-year warranty, free roadside
+        assistance, and access to Varanasi's most trusted service center.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            CHHAYA <span class="accent-text">BAJAJ</span>
+          </a>
+          <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; line-height: 1.6;">
+            Varanasi's premier destination for Bajaj performance. We bring you innovation with world-class service and a
+            legacy of trust at Bhopapur.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vehicles.html">Vehicles</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Vehicles</h4>
+          <ul class="footer-links">
+            <li><a href="vehicles.html">Pulsar</a></li>
+            <li><a href="vehicles.html">Pulsar N</a></li>
+            <li><a href="vehicles.html">Pulsar NS</a></li>
+            <li><a href="vehicles.html">Platina 110</a></li>
+            <li><a href="vehicles.html">Freedom 125</a></li>
+            <li><a href="vehicles.html">Chetak EV</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Showroom Info</h4>
+          <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <strong>Address:</strong> Kachare, Bhopapur, Varanasi, Uttar Pradesh 221001
+          </p>
+          <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <strong>Phone:</strong> +91 94153 57605
+          </p>
+          <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">
+            <strong>Hours:</strong> Mon - Sat: 9:00 AM - 7:00 PM
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Chhaya Bajaj. All rights reserved. Click here to contact the <a href="https://www.abhimishra.me"
+            target="_blank" style="color: var(--accent);">Developer</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Test Ride Modal -->
+  <div class="modal-backdrop" id="testRideModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title">Book a Test Ride</div>
+        <button class="modal-close" id="modalCloseBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="testRideForm">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-input" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile Number *</label>
+            <input type="tel" class="form-input" placeholder="Enter 10-digit phone number" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Select Bike Model *</label>
+            <select class="form-select" id="modalVehicleSelect" required>
+              <option value="">-- Select Bajaj Vehicle --</option>
+              <option value="Pulsar NS200">Pulsar NS200 / NS160</option>
+              <option value="Dominar 400">Dominar 400</option>
+              <option value="Pulsar 150">Pulsar 150</option>
+              <option value="Pulsar N160">Pulsar N160 / N250</option>
+              <option value="Platina 110">Platina 110</option>
+              <option value="Freedom 125">Freedom 125 (CNG)</option>
+              <option value="CT 110X">CT 110X</option>
+              <option value="Chetak EV">Chetak EV</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Date</label>
+            <input type="date" class="form-input">
+          </div>
+          <button type="submit" class="btn-cta"
+            style="width: 100%; justify-content: center; margin-top: 1rem; padding: 0.85rem;">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
