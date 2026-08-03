@@ -175,7 +175,7 @@ function initTestRideModal() {
         window.sessionStorage.setItem(autoPopupKey, '1');
         window.localStorage.setItem(autoPopupKey, '1');
       }
-    }, 10000);
+    }, 15000);
   }
 
   // Trigger buttons
